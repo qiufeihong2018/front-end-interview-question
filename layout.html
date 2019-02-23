@@ -77,5 +77,33 @@
         <div class="right"></div>
     </article>
 </section>
+<section class="layout flex">
+    <style>
+        .layout.flex .left-center-right {
+            margin-top: 120px;
+            display: flex;
+        }
+
+        .left-center-right .left {
+            width: 300px;
+            background: green;
+        }
+
+        .left-center-right .right {
+            width: 300px;
+            background: blue;
+        }
+
+        .left-center-right .center {
+            flex: 1;
+            background: red;
+        }
+    </style>
+    <article class="left-center-right">
+        <div class="left"></div>
+        <div class="center">flex弹性布局</div>
+        <div class="right"></div>
+    </article>
+</section>
 </body>
 </html>
