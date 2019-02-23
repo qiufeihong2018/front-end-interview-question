@@ -12,6 +12,10 @@
         .layout article div {
             min-height: 100px;
         }
+
+        .layout {
+            margin-top: 5px;
+        }
     </style>
 </head>
 <body>
@@ -39,6 +43,38 @@
         <div class="center">
             <p>三栏布局解决方案一：float布局</p>
         </div>
+    </article>
+</section>
+<section class="layout absolute">
+    <style>
+        /*每个div都绝对定位*/
+        .layout.absolute .left-center-right > div {
+            position: absolute;
+        }
+
+        .left-center-right .left {
+            left: 0;
+            width: 300px;
+            background: green;
+        }
+
+        .left-center-right .center {
+            left: 300px;
+            right: 300px;
+            background-color: blue;
+        }
+
+        .left-center-right .right {
+            right: 0;
+            width: 300px;
+            background-color: red;
+
+        }
+    </style>
+    <article class="left-center-right">
+        <div class="left"></div>
+        <div class="center">绝对定位</div>
+        <div class="right"></div>
     </article>
 </section>
 </body>
