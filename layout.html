@@ -30,11 +30,11 @@
         .layout.float .right {
             float: right;
             width: 300px;
-            background-color: red;
+            background-color: blue;
         }
 
         .layout.float .center {
-            background-color: blue;
+            background-color: red;
         }
     </style>
     <article class="left-center-right">
@@ -102,6 +102,36 @@
     <article class="left-center-right">
         <div class="left"></div>
         <div class="center">flex弹性布局</div>
+        <div class="right"></div>
+    </article>
+</section>
+<section class="layout table">
+    <style>
+        .layout.table .left-center-right {
+            width: 100%;
+            display: table;
+            height: 100px;
+        }
+
+        .layout.table .left-center-right > div {
+            display: table-cell;
+        }
+
+        .left-center-right .left {
+            background: green;
+        }
+
+        .left-center-right .right {
+            background: blue;
+        }
+
+        .left-center-right .center {
+            background: red;
+        }
+    </style>
+    <article class="left-center-right">
+        <div class="left"></div>
+        <div class="center">表格布局</div>
         <div class="right"></div>
     </article>
 </section>
