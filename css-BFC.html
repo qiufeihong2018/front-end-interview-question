@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        html, * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <title>css</title>
+</head>
+<body>
+
+<section class="layout">
+    <style>
+        .layout{
+            background: red;
+        }
+        .layout .left{
+            background: blue;
+            height: 100px;
+            width: 100px;
+            float: left;
+        }
+        .layout .right{
+            background: green;
+            height: 120px;
+            overflow: auto;
+        }
+    </style>
+    <div class="left">左边高宽固定浮动</div>
+    <div class="right">右边自定义</div>
+</section>
+
+<section class="father">
+    <style>
+        .father{
+            margin-top: 10px;
+            background: green;
+            float: left;
+        }
+        .father .son{
+            height: 100px;
+            width: 100px;
+            background: red;
+            float: left;
+        }
+    </style>
+    <article class="son">子元素</article>
+</section>
+</body>
+</html>
